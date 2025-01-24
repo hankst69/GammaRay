@@ -14,7 +14,7 @@ if(NOT WIN32)
     return()
 endif()
 
-if(CMAKE_BUILD_TYPE MATCHES "^[Rr]el")
+if(NOT CMAKE_BUILD_TYPE MATCHES "^[Rr]el")
     set(_build_type "Debug")
 else()
     set(_build_type "Release")
